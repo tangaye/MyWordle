@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game">
+      <header class="game-header">
+        <h1>Wordle</h1>
+      </header>
+      <section class="game-board">
+        <div class="game-board__row board__row--0">
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+        </div>
+        <div class="game-board__row board__row--1">
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+        </div>
+        <div class="game-board__row board__row--2">
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+        </div>
+        <div class="game-board__row board__row--3">
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+        </div>
+        <div class="game-board__row board__row--4">
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+        </div>
+        <div class="game-board__row board__row--5">
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+          <span class="game-board__row--tile"></span>
+        </div>
+      </section>
+      <section class="game-keyboard">
+        <div class="game-keyboard__row">
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="q"
+          >
+            Q
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="w"
+          >
+            W
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="e"
+          >
+            E
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="r"
+          >
+            R
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="t"
+          >
+            T
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="y"
+          >
+            Y
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="u"
+          >
+            U
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="i"
+          >
+            I
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="o"
+          >
+            O
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="p"
+          >
+            P
+          </button>
+        </div>
+        <div class="game-keyboard__row">
+          <button class="game-keyboard__btn btn-alpha" data-value="a">A</button>
+          <button class="game-keyboard__btn btn-alpha" data-value="s">S</button>
+          <button class="game-keyboard__btn btn-alpha" data-value="d">D</button>
+          <button class="game-keyboard__btn btn-alpha" data-value="f">F</button>
+          <button class="game-keyboard__btn btn-alpha" data-value="g">G</button>
+          <button class="game-keyboard__btn btn-alpha" data-value="h">H</button>
+          <button class="game-keyboard__btn btn-alpha" data-value="j">J</button>
+          <button class="game-keyboard__btn btn-alpha" data-value="k">K</button>
+          <button class="game-keyboard__btn btn-alpha" data-value="l">L</button>
+        </div>
+        <div class="game-keyboard__row">
+          <button
+            type="button"
+            class="game-keyboard__btn btn-enter"
+            data-value="enter"
+          >
+            ENTER
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="z"
+          >
+            Z
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="x"
+          >
+            X
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="c"
+          >
+            C
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="v"
+          >
+            V
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="b"
+          >
+            B
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="n"
+          >
+            N
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-alpha"
+            data-value="m"
+          >
+            M
+          </button>
+          <button
+            type="button"
+            class="game-keyboard__btn btn-del"
+            data-value="del"
+          >
+            DEL
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
